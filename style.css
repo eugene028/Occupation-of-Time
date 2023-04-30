@@ -1,0 +1,221 @@
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff')
+      format('woff');
+  }
+
+*{
+    font-family: 'Pretendard';
+}
+.main_container{
+    width:100vh;
+    display: flex;
+    flex-direction: column;
+}
+.nav_bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: white;
+    z-index:100;
+}
+.nav_bar_img{
+    width: 30px;
+    height: 30px;
+    margin: 10px 15px;
+}
+.content-container{
+    width: 100vw;
+    height: 100vh;
+    background-image:url("img/main.png");
+    background-repeat: no-repeat;
+    background-position: 50% 30px;
+    background-size:cover;
+}
+.text-group{
+    margin : 0px 20px;
+    padding-top: 130px;
+}
+.text-header{
+    text-align: right;
+    font-weight: 800;
+    color: #4e4e4e;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin: 10px;
+}
+.text-description{
+    padding: 10px;
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 0.9rem;
+    text-align: right;
+    color: #666666;
+    line-height: 130%;
+}
+.plus{
+    font-weight: 500;
+    font-size: 1rem;
+}
+.button-group{
+    display: flex;
+    flex-direction: row;
+    margin:10px;
+    margin-left: 30px;
+}
+.button-click{
+    cursor:pointer;
+    width:120px;
+}
+.view{
+    transition: ease-in 1s;
+    height: 100vh;
+}
+.hidden{
+    opacity: 0%;
+}
+.form-container{
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form-header{
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px;
+    color: #4e4e4e;
+}
+.form-box{
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 90%;
+    height:90%;
+    margin-bottom: 20px;
+    border: 1px solid rgb(124, 124, 124);
+    padding: 10px 0px;
+}
+.inputHeader{
+    color:rgb(138, 137, 137);
+    margin: 20px 10px 10px 10px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+input::-webkit-input-placeholder { font-size: 90%; color:rgb(186, 186, 186); text-indent: 0.5em;}
+input::-moz-placeholder { font-size: 90%; color:rgb(186, 186, 186); text-indent: 0.5em;}
+input:-ms-input-placeholder { font-size: 90%; color:rgb(186, 186, 186); text-indent: 0.5em;}
+input:-moz-placeholder { font-size: 90%; color:rgb(186, 186, 186); text-indent: 0.5em;}
+input::placeholder { font-size: 90%; color:rgb(186, 186, 186);  text-indent: 0.5em;}
+.inputsmall{
+    border:none;
+    -webkit-box-shadow:1px 1px 1px 1px rgba(219, 219, 219, 0.8) inset;
+    -moz-box-shadow:1px 1px 1px 1px rgba(219, 219, 219, 0.8) inset;
+    box-shadow: 1px 1px 1px 1px rgba(219, 219, 219, 0.8) inset;
+    background: white;
+    width: 90%;
+    height: 30px;
+    margin: 0px 10px 0px 10px;
+    border-radius: 5px;
+}
+.inputBig{
+    border:none;
+    -webkit-box-shadow:1px 1px 1px 1px rgba(219, 219, 219, 0.8) inset;
+    -moz-box-shadow:1px 1px 1px 1px rgba(219, 219, 219, 0.8) inset;
+    box-shadow: 1px 1px 1px 1px rgba(219, 219, 219, 0.8) inset;
+    background: white;
+    width: 90%;
+    height: 60px;
+    margin: 0px 10px 0px 10px;
+    border-radius: 5px;
+}
+.inputdescription{
+    font-size: 0.9rem;
+    margin: 20px 10px 10px 10px;
+}
+.selectform{
+    font-size:0.9rem;
+    margin:10px;
+}
+.submitbtn{
+    width:90%;
+    color: white;
+    background-color:cadetblue;
+    border:none;
+    border-radius: 5px;
+    margin: 10px auto;
+    height: 50px;
+    font-family: 'Pretendard';
+    font-weight: 200;
+    font-size: 1rem;
+}
+.extraform{
+    font-size:0.8rem;
+    display:inline
+}
+.privatecheck{
+    margin:10px;
+    width:90%;
+    font-family: 'Pretendard';
+    font-weight: 200;
+    height: 180px;
+    text-indent: 5em;
+    border:none;
+    -webkit-box-shadow:1px 1px 1px 1px rgba(219, 219, 219, 0.8) inset;
+    -moz-box-shadow:1px 1px 1px 1px rgba(219, 219, 219, 0.8) inset;
+    box-shadow: 1px 1px 1px 1px rgba(219, 219, 219, 0.8) inset;
+    background: white;
+    border-radius: 5px;
+}
+
+.sidebar{
+    width: 200px;
+    position:fixed;
+    top:0;
+    left: -200px;
+    height:100%;
+    z-index:999;
+    background:white;
+    color:black;
+    transition: all 0.3s;
+}
+.sidemenu{
+    display:flex;
+    align-items: center;
+    margin-top: 20px;
+    height: 30px;
+    border-bottom: 1px solid #a8a8a8;
+}
+.sidetext{
+    text-decoration-line: none;
+    color: #666666;
+    margin-left: 10px;
+}
+.sideHeader{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.active{
+    left:0;
+}
+.overlay{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:rgba(0, 0, 0, 0.7);
+    z-index:998;
+    display:none;
+}

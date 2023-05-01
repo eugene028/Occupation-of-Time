@@ -9,11 +9,6 @@ youtube.addEventListener('click', function(){
     window.open('https://youtu.be/emq3ZVNCUGs');
 })
 
-var formbutton = document.querySelector(".formdata");
-formbutton.addEventListener('click',function(){
-    document.querySelector('.form-container').scrollIntoView({behavior:'smooth'});
-})
-
 var sidebar = document.querySelector(".sidebarCollapse");
 sidebar.addEventListener('click',function(){
     document.querySelector(".sidebar").classList.add("active");
